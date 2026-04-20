@@ -69,7 +69,7 @@ The platform connects Patients, Doctors, and Hospitals under a unified system wh
 ### Frontend  
 - React (Vite)  
 - Tailwind CSS  
-- Axios  
+  
 
 ### Backend  
 - Node.js  
