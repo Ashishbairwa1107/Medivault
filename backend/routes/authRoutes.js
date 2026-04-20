@@ -1,6 +1,4 @@
 const express = require('express');
-const router = express.Router();
-
 const {
   registerUser,
   loginUser,
@@ -11,13 +9,21 @@ const {
 
 const { protect } = require('../middleware/authMiddleware');
 
-// Auth routes
+const router = express.Router();
+
+console.log('registerUser:', typeof registerUser);
+console.log('loginUser:', typeof loginUser);
+console.log('logoutUser:', typeof logoutUser);
+console.log('googleAuth:', typeof googleAuth);
+console.log('addDoctor:', typeof addDoctor);
+console.log('protect:', typeof protect);
+
 router.post('/register', registerUser);
 router.post('/login', loginUser);
 router.post('/logout', logoutUser);
 router.post('/google', googleAuth);
 
-// Doctor management
-router.post('/add-doctor', protect, addDoctor);
+// TEMPORARILY COMMENT THIS
+// router.post('/add-doctor', protect, addDoctor);
 
 module.exports = router;
