@@ -165,13 +165,6 @@ Health analytics & disease trend insights
 
 Government-level healthcare integration
 
-
-👨‍💻 Author
-
-Ashish Bairwa
-
-B.Tech IT | Guru Ghasidas Vishwavidyalaya
-
 ⭐ Note
 
 This project is built as a real-world scalable healthcare solution prototype, focusing on patient empowerment, data security, and system interoperability. Continuous improvements are being made to enhance usability and performance.
