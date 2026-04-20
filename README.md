@@ -92,3 +92,72 @@ The platform connects Patients, Doctors, and Hospitals under a unified system wh
 ---
 
 ## 📁 Project Structure  
+
+medivault/
+├── frontend/ → React Application
+├── backend/ → Express API Server
+├── README.md
+
+
+---
+
+## ⚙️ Setup Instructions  
+
+### 1️⃣ Clone Repository  
+
+git clone https://github.com/YOUR_USERNAME/medivault.git
+cd medivault
+2️⃣ Backend Setup
+cd backend
+npm install
+
+Create .env file:
+
+PORT=5000
+MONGO_URI=your_mongodb_uri
+JWT_SECRET=your_secret_key
+AWS_ACCESS_KEY_ID=your_key
+AWS_SECRET_ACCESS_KEY=your_secret
+AWS_REGION=your_region
+AWS_BUCKET_NAME=your_bucket
+
+Run server:
+
+npm run dev
+3️⃣ Frontend Setup
+cd frontend
+npm install
+npm run dev
+🔐 Environment Variables
+
+Make sure .env is inside /backend
+
+⚠️ Never push .env to GitHub
+
+📊 Current Status
+
+✅ Authentication system implemented
+✅ Role-based dashboards created
+✅ Medical records system working
+✅ File upload (reports) integrated
+🚧 Consent management enhancements
+🚧 Advanced analytics & reporting
+
+
+🎯 Future Scope
+
+AI-based clinical decision support (assistive)
+Telemedicine (video consultations)
+Mobile application (Patient & Doctor apps)
+Health analytics & disease trend insights
+Government-level healthcare integration
+
+
+👨‍💻 Author
+
+Ashish Bairwa
+B.Tech IT | Guru Ghasidas Vishwavidyalaya
+
+⭐ Note
+
+This project is built as a real-world scalable healthcare solution prototype, focusing on patient empowerment, data security, and system interoperability. Continuous improvements are being made to enhance usability and performance.
