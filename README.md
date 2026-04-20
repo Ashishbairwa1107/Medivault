@@ -106,9 +106,13 @@ medivault/
 ### 1️⃣ Clone Repository  
 
 git clone https://github.com/YOUR_USERNAME/medivault.git
+
 cd medivault
+
 2️⃣ Backend Setup
+
 cd backend
+
 npm install
 
 Create .env file:
@@ -137,25 +141,35 @@ Make sure .env is inside /backend
 📊 Current Status
 
 ✅ Authentication system implemented
+
 ✅ Role-based dashboards created
+
 ✅ Medical records system working
+
 ✅ File upload (reports) integrated
+
 🚧 Consent management enhancements
+
 🚧 Advanced analytics & reporting
 
 
 🎯 Future Scope
 
 AI-based clinical decision support (assistive)
+
 Telemedicine (video consultations)
+
 Mobile application (Patient & Doctor apps)
+
 Health analytics & disease trend insights
+
 Government-level healthcare integration
 
 
 👨‍💻 Author
 
 Ashish Bairwa
+
 B.Tech IT | Guru Ghasidas Vishwavidyalaya
 
 ⭐ Note
