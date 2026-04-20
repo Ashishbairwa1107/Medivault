@@ -11,18 +11,18 @@ dotenv.config();
 
 const app = express();
 
-// ================= CORS CONFIG (FINAL) =================
+// ================= CORS CONFIG =================
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:5174",
   "http://localhost:5175",
   "http://localhost:3000",
-  "https://medivault-rose.vercel.app" // ✅ your frontend
+  "https://medivault-rose.vercel.app"
 ];
 
 const corsOptions = {
   origin: function (origin, callback) {
-    if (!origin) return callback(null, true); // Postman / mobile apps
+    if (!origin) return callback(null, true);
 
     if (allowedOrigins.includes(origin)) {
       callback(null, true);
@@ -40,7 +40,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
-// ================= DATABASE + SERVER =================
+// ================= START SERVER =================
 const startServer = async () => {
   try {
     await connectDB();
@@ -60,8 +60,7 @@ const startServer = async () => {
 
     // ================= ROUTES =================
     app.use('/api/auth', require('./routes/authRoutes'));
-    app.use('/api/users', require('./routes/userRoutes'));
-    app.use('/api/profile', require('./routes/userRoutes'));
+    app.use('/api/users', require('./routes/userRoutes')); // ✅ ONLY THIS
     app.use('/api/records', require('./routes/recordRoutes'));
     app.use('/api/appointments', require('./routes/appointmentRoutes'));
     app.use('/api/consents', require('./routes/consentRoutes'));
@@ -74,7 +73,7 @@ const startServer = async () => {
       res.send('🚀 MediVault API running');
     });
 
-    // ================= START SERVER =================
+    // ================= PORT =================
     const PORT = process.env.PORT || 5000;
 
     app.listen(PORT, () => {
