@@ -1,4 +1,4 @@
-MEDIVAULT
+
 MediVault is a patient-centric digital healthcare platform designed to solve one of the biggest problems in modern healthcare — fragmented medical records across hospitals.
 
 In traditional systems, patient data is locked within individual hospitals, leading to repeated tests, delayed diagnosis, and inefficient treatment. MediVault eliminates this by providing a centralized, secure, and accessible medical record system where patients control their data and can share it across multiple hospitals seamlessly.
