@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sun, Moon, Home, Shield, Globe, FileText, BarChart3, Bot, Hospital, ArrowRight, Activity, User, Stethoscope, X } from 'lucide-react';
+import { Sun, Moon, Home, Shield, Globe, FileText, BarChart3, Bot, Hospital, ArrowRight, Activity, User, Stethoscope, X, MoreVertical } from 'lucide-react';
 import ScrollFeatureSection from '../components/ScrollFeatureSection';
 import HowItWorks from '../components/landing/HowItWorks';
 import BenefitsSection from '../components/landing/BenefitsSection';
@@ -69,10 +69,10 @@ const Landing = () => {
 
                     {/* Mobile Menu Toggle */}
                     <button 
-                        className="md:hidden p-2 text-slate-600 dark:text-slate-300"
+                        className="md:hidden p-2 text-blue-700 hover:bg-slate-100 rounded-full transition-colors"
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                     >
-                        {isMenuOpen ? <X size={28} /> : <Activity size={28} className="rotate-90" />}
+                        {isMenuOpen ? <X size={28} /> : <MoreVertical size={28} />}
                     </button>
                 </div>
             </nav>
